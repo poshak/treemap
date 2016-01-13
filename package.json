@@ -1,5 +1,5 @@
 {
-  "name": "treemap",
+  "name": "treemap-directive",
   "version": "1.0.0",
   "description": "angular directive for d3 treemap with default grouping, click to zoom and search functionality!",
   "main": "src/treemap.js",

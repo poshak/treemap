@@ -1,0 +1,24 @@
+    rect {
+        fill: none;
+        pointer-events: all;
+    }
+    line {
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+    #parent-color-gradient{
+        height: 20px;
+        width: 100px;
+        float: right;
+        margin-bottom: 2px;
+        padding: 0px 10px;
+    }
+    #color-gradient{
+        height: 10px;
+        width: 100%;
+        position: relative;
+        background: -webkit-linear-gradient(left, #40664D, #FFCC00, #990000); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(left, #40664D, #FFCC00, #990000); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(left, #40664D, #FFCC00, #990000); /* For Fx 3.6 to 15 */
+        background: linear-gradient(to right, #40664D, #FFCC00, #990000); /* Standard syntax (must be last) */
+    }

@@ -108,7 +108,7 @@
 					data = {'children':dummyarr,'name':'root'};
                     if(!data.children || data.children.length == 0){
                         d3.select("#"+attrs.id).append("div")
-                            .html('NoDataAvailable')
+                            .html('No Data Available')
                             .style("text-align","center")
                             .style("color","#FF454F")
                             .style("font-size","18px")
@@ -125,30 +125,6 @@
 						.style("width", w + "px")
 						.style("height", optionsHeight + "px")
 						.style("margin", "auto");
-
-					//optionsDiv
-					//	.append("input")
-					//	.attr("type", "text")
-					//	.attr("id", "searchBox")
-					//	.style("float","right")
-					//	.style("height","20px")
-					//	.style("margin-top","20px");
-
-					//optionsDiv
-					//	.append("div")
-					//	.style("float","left")
-					//	.style("height","20px")
-					//	.style("margin-top","20px")
-					//	.style('padding','0 10px')
-					//	.html($translate('Color by')+": '"+$translate(scope.colorLabel)+"'");
-                    //
-					//optionsDiv
-					//	.append("div")
-					//	.style("float","left")
-					//	.style("height","20px")
-					//	.style("margin-top","20px")
-					//	.style('padding','0 10px')
-					//	.html($translate('Size by')+": '"+$translate(scope.sizeLabel)+"'");
 
 					var colorDiv = optionsDiv.append("div");
 
@@ -175,11 +151,6 @@
 						.style("top", "10px")
 						.style("font-size", "10px")
 						.html('50');
-
-
-					//document.getElementById('searchBox').onkeyup = function(){
-					//	searchFilterFunction(this.value);
-					//};
 
 					var svg = d3.select('#'+attrs.id).append("div")
 						.attr("class", "chart")
