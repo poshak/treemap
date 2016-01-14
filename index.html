@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Treemap Angular Directive</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js" charset="utf-8"></script-->
+	<script src="d3.v3.min.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="src/treemap.css" >
+	<script src="src/treemap.js"></script>
 	<script>
 		var app = angular.module('exampleApp',['treemap']);
 		app.controller('MainCtrl', function ($scope) {
@@ -12,8 +16,7 @@
 			});
 	</script>
 	
-	<link type="text/css" rel="stylesheet" href="src/treemap.css" >
-	<script src="src/treemap.js"></script>
+	
 	
 </head>
 <body ng-app="exampleApp" ng-controller="MainCtrl">
@@ -23,11 +26,11 @@
             <treemap
                     data="componentsData"
                     parentElementId="treeParentDiv"
-                    id="IDTreeMap"
-                    max-val="15000"
 					color-label="size"
                     size-label="size"
-                    search="{{searchbox}}">
+					max-val="15000"
+                    search="{{searchbox}}"
+					id="IDTreeMap">
             </treemap>
 </div>
 </body>
