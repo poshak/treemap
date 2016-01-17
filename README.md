@@ -23,7 +23,7 @@ This directive uses the d3 treemap component and adds many customizations over i
 Example
 http://htmlpreview.github.io/?https://github.com/poshak/treemap/blob/master/index.html
 
-If you want to find out more about the D3 treemap in general, check this resource.
+If you want to find out more about the D3 treemap in general, check this : http://bl.ocks.org/mbostock/4063582.
 
 How to use
 
@@ -66,17 +66,17 @@ Use the <treemap> directive in your html code.
     </div>
     
 where :
-    -- mandatory attributes--
-    data : points to the 'componentsData' defined in scope
-    parentElementId : is the id of the (parent)div element to which the treemap will be attached 
-    color-label : is the metric used of defining color of the box of an element in the treemap
-    size-label : is the metric used of defining size of the box of an element in the treemap 
-    id : is the id of the div element of treemap
-    
-    --optional attributes--
-    search : points to the scope variable attached to a text box 
-    max-val : is the maximum value of the red color range. the colors will vary in the range 0 to <max-val>. By default the value is 100.
-    
+(mandatory attributes)
+data : points to the 'componentsData' defined in scope
+parentElementId : is the id of the (parent)div element to which the treemap will be attached 
+color-label : is the metric used of defining color of the box of an element in the treemap
+size-label : is the metric used of defining size of the box of an element in the treemap 
+id : is the id of the div element of treemap
+
+(optional attributes)
+search : points to the scope variable attached to a text box 
+max-val : is the maximum value of the red color range. the colors will vary in the range 0 to <max-val>. By default the value is 100.
+
 Note: The directive does not process the input data in anyway. It is your responsibility to pass in data that the D3 treemap can read.
 
 Disclaimer
