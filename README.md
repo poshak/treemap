@@ -3,18 +3,19 @@ AngularJs Directive for D3 Treemap
 
 
 Introduction
+
 This directive uses the d3 treemap component and adds many customizations over it. They are :
 
 - Default grouping and providing the group header 
-	All the children in data are by default grouped together, making a box, where the header specify the name of the parent.
+	All the siblings in data are by default grouped together, making a box, where the header specify the name of the parent.
 - Click to zoom-in & zoom-out
 	In order to get a closer peak at the elements of the group, a click on any child element will lead to a zoom-in, where only the siblings of the child element/item will be seen. 
 	A click again will lead to restoration of the old state of the treemap.
 - Search-ability
-	Any item in the treemap can be searched by its name. The search box is not a part of the treemap, but an easy integration can be done binding a paranter with an external text box.
+	Any item in the treemap can be searched by its name. The search box is not a part of the treemap, but an easy integration can be done binding a parameter with an external text box.
 - Colors to be chosen from a gradient of green, yellow and red
 	By default, the items in this treemap will have a color which will be a gradient of either green and yellow, or yellow and red.
-	The reason is to show the items with low values as green(ish), with high values as red(ish) and the ones which are around the 50% marsk as yellow(ish).
+	The reason is to show the items with low values as green(ish), with high values as red(ish) and the ones which are around the 50% mark as yellow(ish).
 	See the example for a better understanding.
 - Ability to specify a maximum value
 	The max value for color red can be specified above which all the elements will appear red.
